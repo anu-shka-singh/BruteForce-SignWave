@@ -1,0 +1,127 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,800;1,300;1,500;1,700&family=Rubik:wght@300;500;800&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+body{
+  background-image: url('images/bg.svg');
+}
+.background-image {
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  
+}
+.container {
+  width: 1170px;
+  padding-right: 10px;
+  padding-left: 15px;
+  margin: auto;
+}
+
+/* Start Landing Page */
+
+.landing-page {
+  position: relative;
+  margin-top: 0;
+  
+}
+
+.landing-page .header-area {
+  display: flex;
+  padding: 2px 0 0;
+  position: relative;
+}
+
+.logo img {
+  width: 25%;
+  margin-left: -30px;
+}
+
+
+.landing-page .header-area .links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.landing-page .header-area .links li {
+  display: inline-block;
+  margin-left: 30px;
+  color: #5d5d5d;
+  cursor: pointer;
+}
+
+.landing-page .header-area .links li:last-child {
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 18px;
+  color: #FFF;
+  background-color: #6c63ff;
+}
+
+.landing-page .info {
+  width: 30%;
+  float: left;
+}
+
+.landing-page .info img {
+  margin-top: -10px;
+  width: 130%;
+}
+
+.landing-page .info p {
+  margin: 10px 0 0;
+  margin-left: 3px;
+  margin-top: -40px;
+  padding-left: 10px;
+  font-size: 20px;
+  color: #000000;
+}
+button {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  margin-left: 10px;
+  background-color: #6c63ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #6c63ff;
+  border-radius: 30px;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+
+button:hover {
+  color: #6c63ff;
+  background-color: #fff;
+  border: 2px solid #6c63ff;
+}
+
+
+.landing-page .image {
+  width: 69%;
+  float: right;
+  margin-left: 0%;
+  margin-top: 0px;
+}
+.landing-page .image img {
+  max-width: 110%;
+  margin-right: 0;
+}
+
+.clearfix {
+clear: both;
+}
+
+/* End Landing Page */

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,800;1,300;1,500;1,700&family=Rubik:wght@300;500;800&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-image: url('images/bg.svg');
+    padding: 5px;
+  }
+  .background-image {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    
+  }
+  .landing-page .header-area {
+    display: flex;
+    padding: 2px 0 0;
+    position: relative;
+  }
+  
+  .container {
+
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+  }
+  
+  .image img {
+    position: absolute;
+    margin-top: -180px; /* adjust this value */
+    width: 100%;
+    justify-content: center;
+    height: 60%;
+  }
+
+  .text img {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  button {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #6c63ff;
+    border-radius: 30px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  button:hover {
+    color: #6c63ff;
+    background-color: #fff;
+    border: 2px solid #6c63ff;
+  }
+  
