@@ -9,7 +9,7 @@
 		<form action="" method="post" align="left">
 		{% csrf_token %}
 					<input type="text" name="sen" class="mytext" id="speechToText" placeholder="">
-					<button type="button" name="button" class="mic" onclick="record()"><img src="{% static 'mic3.png' %}" height="32px" width="38px" /></button>
+					<button type="button" name="button" class="mic" onclick="record()"><img src="https://icon-library.com/images/white-microphone-icon/white-microphone-icon-17.jpg" height="32px" width="38px" /></button>
 		  			&nbsp&nbsp&nbsp&nbsp
 		  			<input type="submit" name="submit" class="submit">
 
@@ -17,11 +17,11 @@
 		<br>
 		<table cellspacing="20px">
 			<tr>
-				<td class="td">The text that you entered is:</td>
+				<td class="td"></td>
 				<td class="td">{{ text }}</td>
 			</tr>
 			<tr>
-				<td class="td">Key words in sentence:</td>
+				<td class="td"></td>
 				<td class="td">
 				<ul class="td" id="list" align="center">
   					{% for word in words %}

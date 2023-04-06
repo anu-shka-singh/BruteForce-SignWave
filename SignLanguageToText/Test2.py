@@ -16,7 +16,7 @@ imgSize = 300
 #folder = "Data/L"
 counter = 0
 
-labels = ["1","2","3","4","5","6","7","8","9","A","bad","C","good","Hello","how","L","O","okay","R","thank you","what","Y","you","I am"]
+labels = ["1","2","3","4","5","6","8","9","A","bad","C","good","Hello","how","L","O","okay","R","thank you","what","Y","you","I am"]
 
 
 s = ""

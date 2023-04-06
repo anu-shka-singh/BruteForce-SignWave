@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 <style>
 .center {
   display: block;
@@ -15,11 +17,11 @@
   margin-top:0;
   padding: 0;
   overflow: hidden;
-  background-color: #feda6a;
+  background-color: #393f4d;
 }
 h2
 {
-  color: #feda6a;
+  color: #ffffff;
 }
 
 .li {
@@ -37,7 +39,7 @@ h2
 
 li a:hover {
   background-color: #393f4d;
-  color: #feda6a;
+  color: #f26afe;
   font-weight: bold;
 }
 .form-style button{
@@ -45,7 +47,7 @@ li a:hover {
   width: 89%;
 	height:70%;
 	padding: 5%;
-	background: #feda6a;
+	background: #f26afe;
 	border-bottom: 2px solid #393f4d;;
 	border-top-style: none;
 	border-right-style: none;
@@ -53,12 +55,11 @@ li a:hover {
 	color: #393f4d;
   font-weight: bold;
   font-size: 28px;
-  font-family: "Times New Roman";
 }
 
 .form-style button:hover {
   background-color: #393f4d;
-  color: #feda6a;
+  color: #f26afe;
   font-weight: bold;
 }
 .split {
@@ -74,12 +75,12 @@ li a:hover {
 
 .left {
   left: 15;
-  border-right: 0px #feda6a solid;
+  border-right: 0px #f26afe solid;
 }
 
 .right {
   right: 0;
-  border-left: 1px #feda6a solid;
+  border-left: 1px #ffffff solid;
 }
 
 .mytext {
@@ -97,7 +98,7 @@ li a:hover {
 
   .mic {
       border:1px solid #393f4d;
-      background:#feda6a;
+      background:#000000;
       vertical-align:top;
       padding:0px;
       margin:0;
@@ -115,7 +116,7 @@ li a:hover {
     height: 42px;
     width: 160px;
     text-align: center;
-    background-color: #feda6a;
+    background-color: #fff;
     color: #393f4d;
     font-weight: bold;
     font-size: 24px;
@@ -124,18 +125,18 @@ li a:hover {
 }
 .submit:hover {
   background-color: #393f4d;
-  color: #feda6a;
+  color: #fff;
   font-weight: bold;
 }
 .td {
-  color: #feda6a;
+  color: #393f4d;
   font-weight: bold;
   font-size: 20px;
 }
 
 body
 {
-  background-color: #404040
+  background-color: #393f4d
 }
 
 .form-style{
@@ -152,7 +153,7 @@ body
   font-family: "Times New Roman";
 	text-align: center;
 	margin: -16px -16px 16px -16px;
-  color:#feda6a
+  color:#000000
 }
 .form-style input[type="text"],
 .form-style input[type="password"],
@@ -209,25 +210,25 @@ body
 </style>
 <title>Homepage</title>
 </head>
-<div style="background-color:#404040;color:#feda6a;padding:10 10 1 10;border: 1px #feda6a groove;margin-bottom:0;">
+<div style="background-color:#ffffff;color:#393f4d; padding:10 10 1 10;border: 1px #393f4d groove;margin-bottom:0; background-url : "bg.svg"">
 
-<h1 align=center>Audio To Sign Language Tool</h1>
+<h1 align=center>Speech to Sign Language</h1>
 </div>
 <br>
 <body>
 <ul id="nav">
-  <li class="li"><a class="active" href="{% url 'home' %}">Home</a></li>
-  <li class="li"><a href="{% url 'animation' %}">Convertor</a></li>
+  <li class="li"><a class="active" href="{% url 'home' %}"></a></li>
+  <li class="li"><a href="{% url 'animation' %}"></a></li>
   {% if not user.is_authenticated %}
-  <li class="li"><a href="{% url 'signup' %}">Sign Up</a></li>
+  <li class="li"><a href="{% url 'signup' %}"></a></li>
   {% endif %}
   {% if user.is_authenticated %}
-  <li class="li"><a href="{% url 'logout' %}">Log-Out</a></li>
+  <li class="li"><a href="{% url 'logout' %}"></a></li>
   {% else %}
-    <li class="li"><a href="{% url 'login' %}">Log-in</a></li>
+    <li class="li"><a href="{% url 'login' %}"></a></li>
   {% endif %}
-  <li class="li"><a href="{% url 'contact' %}">Contact</a></li>
-  <li class="li"><a href="{% url 'about' %}">About</a></li>
+  <li class="li"><a href="{% url 'contact' %}"></a></li>
+  <li class="li"><a href="{% url 'about' %}"></a></li>
 </ul>
 
 <div class="wrapper" >

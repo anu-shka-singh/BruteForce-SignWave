@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Real Time Classification Using Webcam Input</title>
+</head>
+<body>
+    <h1>Real Time Classification Using Webcam Input</h1>
+    <div>
+        <video id="video" width="640" height="480" autoplay></video>
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+    <script>
+        const video = document.getElementById("video");
+        const canvas = document.getElementById("canvas");
+        const context = canvas.getContext("2d");
+
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(stream => {
+                video.srcObject = stream;
+                video.play();
+            })
+            .catch(error => {
+                console.error("Could not access webcam:", error);
+            });
+
+        setInterval(() => {
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            canvas.toBlob(blob => {
+                fetch("/video_feed", {
+                    method: "POST",
+                    body: JSON.stringify({ image: blob }),
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                })
+                .then(response => response.json())
+                .then(prediction => {
+                    console.log(prediction);
+                })
+                .catch(error => {
+                    console.error("Error during prediction:", error);
+                });
+            }, "image/jpeg", 0.95);
+        }, 500);
+    </script>
+</body>
+</html>

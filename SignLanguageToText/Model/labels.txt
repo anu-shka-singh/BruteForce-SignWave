@@ -4,15 +4,15 @@
 3 4
 4 5
 5 6
-6 7
+6 A
 7 8
 8 9
-9 A
-10 bad
-11 C
-12 good
-13 Hello
-14 how
+9 bad
+10 C
+11 good
+12 Hello
+13 how
+14 I am
 15 L
 16 O
 17 okay
@@ -21,4 +21,3 @@
 20 what
 21 Y
 22 you
-23 I am
