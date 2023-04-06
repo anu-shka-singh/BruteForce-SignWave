@@ -1,0 +1,4 @@
+flask
+cvzone
+pyttsx3
+tensorflow
